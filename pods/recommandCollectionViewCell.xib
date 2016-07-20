@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommandCollectionViewCell" id="gTV-IL-0wX" customClass="recommandCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="180"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PrK-IR-1KU">
+                        <rect key="frame" x="15" y="10" width="108" height="106"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浙江之声" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGA-td-7MY">
+                        <rect key="frame" x="15" y="126" width="108" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="eyk-Hg-vly"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="gGA-td-7MY" firstAttribute="top" secondItem="PrK-IR-1KU" secondAttribute="bottom" constant="10" id="8ZC-7E-K4c"/>
+                <constraint firstItem="PrK-IR-1KU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="GjD-D4-Adz"/>
+                <constraint firstItem="gGA-td-7MY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="TEK-xP-wN3"/>
+                <constraint firstItem="PrK-IR-1KU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="V2D-u7-Sso"/>
+                <constraint firstAttribute="bottom" secondItem="gGA-td-7MY" secondAttribute="bottom" constant="10" id="dsd-pt-nDp"/>
+                <constraint firstAttribute="trailing" secondItem="gGA-td-7MY" secondAttribute="trailing" constant="15" id="hN3-Wb-q9e"/>
+                <constraint firstAttribute="trailing" secondItem="PrK-IR-1KU" secondAttribute="trailing" constant="15" id="hhy-kg-fdd"/>
+            </constraints>
+            <size key="customSize" width="278" height="286"/>
+            <connections>
+                <outlet property="recommandCellImage" destination="PrK-IR-1KU" id="hB1-wL-7eB"/>
+                <outlet property="recommandCellTitle" destination="gGA-td-7MY" id="VVU-ES-cDE"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="145"/>
+        </collectionViewCell>
+    </objects>
+</document>
